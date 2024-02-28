@@ -5,11 +5,11 @@ import PRODUCT  from "../../data/products";
 
 
 const Cart = () => {
-  const {cartItems, reset} = useContext(shopContext);
+  // const {cartItems, reset} = useContext(shopContext);
 
-  const itemsCount = cartItems?.reduce((prev, current)=>{
-    return prev + current.count;
-  },0);
+  // const itemsCount = cartItems?.reduce((prev, current)=>{
+  //   return prev + current.count;
+  // },0);
 
   const list = {};
 
@@ -31,20 +31,20 @@ const Cart = () => {
     <>      
       <h1>your cart:</h1>
       <div className="row ">
-        {PRODUCT.map((p)=>{
+        {/* {PRODUCT.map((p)=>{
             if( cartItems?.some((i)=> i.id===p.id && i.count >0)){
               return <Product key={p.id} data={p}></Product>
             } 
           })
 
-        }
+        } */}
       </div>
       <hr />
-      <button className="btn btn-warning my-3" onClick={reset}>reset cart</button>
+      {/* <button className="btn btn-warning my-3" onClick={reset}>reset cart</button> */}
       <hr />
       <div className="container col-6">
           <div className="card my-5 p-3">
-            <h4>total : {itemsCount} products</h4>
+            {/* <h4>total : {itemsCount} products</h4> */}
             <h3>total price : $</h3>
             <div className="row ">
               <button className="btn btn-success btn-lg mx-5 col-5">Buy</button>

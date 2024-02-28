@@ -17,7 +17,7 @@ export const ShopContextProvider = (props) => {
   
   useEffect(()=>{
     const data = localStorage.getItem('cart');
-    setCartItems(!!JSON.parse(data) ? JSON.parse(data): [])
+    setCartItems(!!JSON.parse(data) ? JSON.parse(data) : [])
   },[])
 
   useEffect(()=>{
