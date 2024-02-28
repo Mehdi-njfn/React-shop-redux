@@ -6,12 +6,12 @@ import { shopContext } from "../context/shopContext";
 import './nav.css'
 
 const Nav = () => {
-  const {cartItems, isAuth}=useContext(shopContext);
+  // const {cartItems, isAuth}=useContext(shopContext);
 
 
-  const itemsCount = cartItems?.reduce((prev, current)=>{
-    return prev + current.count;
-  },0);
+  // const itemsCount = cartItems?.reduce((prev, current)=>{
+  //   return prev + current.count;
+  // },0);
 
   const logout=()=>{
     localStorage.removeItem('token');
@@ -27,22 +27,22 @@ const Nav = () => {
           <li className="nav-item">
             <Link to='/'className="nav-link">Shop</Link>
           </li>
-          {!isAuth && <li className="nav-item">
+           <li className="nav-item">
             <Link to='/login' className="nav-link">Login</Link>
-          </li>}
+          </li>
           <li className="nav-item">
             <Link to='/cart' className="nav-link">
               <FontAwesomeIcon icon={faShoppingCart}/>
-              {itemsCount >0 &&<span className="items-count">{itemsCount}</span>}
+              <span className="items-count">0</span>
             </Link>
           </li>
-          {isAuth && <li className="nav-item">
+          <li className="nav-item">
             <button onClick={logout} className="btn btn-danger btn-sm mt-1 mx-3 text-black">Logout</button>
-          </li>}
+          </li>
         </ul>
       </div>
     </div>
   </>  );
 }
  
-export default Nav;<h1>NAV</h1>
+export default Nav;
