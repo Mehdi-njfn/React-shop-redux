@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <ShopContextProvider>
           <Nav />
           <Well />
           <Routes>
@@ -24,7 +23,6 @@ function App() {
             <Route path='/register' element={<Register />}/>
             <Route path='/login' element={<Login />}/>
           </Routes>
-        </ShopContextProvider>
       </Router>
     </div>
   );
