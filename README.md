@@ -1,4 +1,5 @@
 this project is v3 of react shop 2 with redux and redux toolkit . 
+usage sync and async func and thunk for fetch data
 
 first running :
 
