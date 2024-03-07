@@ -8,25 +8,29 @@ const PRODUCT = [
     id: 1,
     pName: 'Mobile',
     price: 1000,
-    pImg: mobile
+    pImg: mobile,
+    count:0
   },
   {
     id: 2,
     pName: 'Camra',
     price: 2000,
-    pImg: camra
+    pImg: camra,
+    count:0
   },
   {
     id: 3,
     pName: 'Mobile',
     price: 800,
-    pImg: phone
+    pImg: phone,
+    count:0
   },
   {
     id: 4,
     pName: 'Nokia',
     price: 500,
-    pImg: nokia
+    pImg: nokia,
+    count:0
   },
 ]
  
