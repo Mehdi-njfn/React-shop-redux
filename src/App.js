@@ -10,7 +10,12 @@ import Register from './pages/auth/register';
 import Login from './pages/auth/login';
 import Protect from './component/protect';
 import Dashboard from './pages/dashboard';
+import { useDispatch } from 'react-redux';
+import { update } from './redux/cartSlice';
+
 function App() {
+  const dispatch = useDispatch()
+  //dispatch(update())
   return (
     <div className="App">
       <Router>
